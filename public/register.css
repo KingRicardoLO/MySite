@@ -1,0 +1,144 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+    cursor: pointer;
+
+}
+
+.container {
+
+    display: grid;
+    place-items: center;
+    padding: 85px;
+    
+    }
+
+h1{
+
+    color: rgb(196, 175, 196);
+
+}
+
+.inner_container{
+
+background-color: wheat;
+
+padding: 20px;
+width: 70%;
+
+margin-top: 45px;
+
+
+}
+
+
+
+.inner_container input{
+
+   width: 100%;
+   height: 12%;
+   border: none;
+   border-radius: 5px;
+   outline-color: rgb(253, 253, 253);
+   
+    }
+
+ .inner_container label{
+
+        font-size: 14.5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+         color: rgb(90, 86, 86);
+     }
+
+  .inner_container button{
+
+
+    margin-top: 20px;
+    margin-left: 2.8rem;
+    width: 35%;
+
+    border: none;
+   
+    border-radius: 10px;
+  }
+
+
+  .inner_container button:hover{
+
+  background-color: tomato;
+
+  }
+
+
+
+
+.next{
+    margin-inline: 45px;
+    margin-top: 8px;
+margin-bottom: 5px;
+margin-left: 3.5rem;
+font-size: 12px;
+
+}
+
+
+
+
+
+
+@media screen and (min-width:800px){
+
+    .inner_container{
+
+      
+        width: 20%;
+        
+        
+        }
+
+}
+
+@media screen and (min-width:760px){
+
+    .inner_container button{
+
+
+       
+        margin-left: 8rem;
+        
+      }
+
+    
+
+.next{
+   
+margin-left: 12rem;
+
+
+}
+
+}
+
+@media screen and (min-width:780px){
+
+    .inner_container button{
+
+
+       
+        margin-left: 2.8rem;
+        
+      }
+
+    
+
+.next{
+   
+    margin-left: 3.5rem;
+
+
+}
+
+}
+

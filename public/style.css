@@ -1,0 +1,830 @@
+*{
+
+    box-sizing: border-box;
+padding: 0%;
+margin: 0%;
+text-decoration: none;
+color: cornsilk;
+}
+
+
+header{
+
+
+    background-color: rgb(79, 79, 74);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+
+
+}
+
+.logo:hover{
+
+    color: rgb(232, 126, 107);
+
+}
+
+nav{
+    position: absolute;
+    text-align: left;
+    top:100%;
+    left:0%;
+    background-color: rgb(79, 79, 74);
+    width: 100%;
+
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out
+
+}
+
+nav ul{
+
+margin: 0;
+padding: 0;
+list-style: none;
+
+}
+
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out ;
+}
+
+
+nav a:hover{
+    color: rgb(232, 126, 107);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-toggle:checked ~ nav{
+
+    transform: scale(1,1);
+   
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+  /*  border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+display: block;
+background: white;
+height: 2px;
+width: 2em;
+border-radius: 2px;
+position: relative;
+
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+
+    content:'';
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+
+
+.nav-toggle:checked ~ nav a{
+
+   opacity: 1;
+   transition: opacity 250ms ease-in-out 2500ms;
+}
+
+.logo1 {
+    margin-left: 38rem;
+    
+        height: 2rem;
+
+        transform: translateY(-38px);
+    }
+
+@media screen and (min-width:800px) {
+
+    .logo1 img{
+ all:unset;
+        margin-left:20px;
+        margin-top: 6px;
+            height: 2rem;
+            
+           
+        }
+    .nav-toggle-label{
+        display: none;
+    }
+
+    header{
+
+     display: grid;
+     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+
+
+    }
+    .logo{
+        grid-column: 2/ span 1;
+    }
+    nav {
+        all:unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before{
+      content: '';
+      display: block;
+      height: 5px;
+      background: rgb(255, 0, 157);
+      position: absolute;
+      top:-.75em;
+      left:0;
+      right:0;
+      transform: scale(0,1);
+      transform-origin: right;
+      transition: transform ease-in-out 250ms;
+
+    }
+
+    nav a:hover::before{
+        transform:scale(1,1);
+    }
+
+    nav ul{
+        display: flex;
+       
+       /* border: 1px solid red;*/
+    }
+
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    .small{
+
+      padding-top: 100px;
+      padding-bottom: 100px;
+      font-size: 25px;
+    }
+    
+    .small p{
+
+        margin-top: 60px;
+      }
+
+      .big img{
+
+    
+       
+        width: 34%;
+            
+        
+        }
+       
+
+    .small{
+        all:unset;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+        
+    }
+
+    .small h1{
+       
+        font-size: 30px;
+       
+        margin-top: 20px;
+        
+    }
+
+    .small h1:hover{
+       
+        color: rgb(255, 150, 131);
+        
+    }
+
+    .small p{
+       
+       margin-top: 50px;
+        font-size: 15px;
+        
+    }
+
+
+    
+    
+   
+
+     
+
+}
+
+.background{
+    
+   background-image: url("./pictures/pexels-andrew-harvard-4846137.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+   min-width: 100%;
+ 
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+   
+
+
+}
+
+@media screen and (min-width:1000px){
+
+
+    .background{
+
+        background-position-y:-180px ;
+          padding-bottom: -40rem;
+        }
+}
+
+.background h1{
+
+color: rgb(218, 167, 131);
+}
+
+.background button{
+    
+     margin-left: 23rem;
+
+     width: 60px;
+     border-radius: 25px;
+   
+     
+ background-color:  rgb(218, 167, 131);
+     
+ border: 1px solid white;
+ 
+ color: thistle;
+
+
+    }
+
+.background button:hover{
+    
+    background-color:   rgb(242, 104, 79);
+    border:2px solid rgb(255, 145, 126);
+
+    }
+
+
+.small{
+
+    background-color: rgb(134, 131, 128);
+    
+display: flex;
+justify-content: center;
+align-items: center;
+
+    
+   
+
+}
+
+.small p,h1,h2{
+
+    
+display: flex;
+justify-content: center;
+align-items: center;
+
+    
+
+}
+
+.big{
+
+    background-color: rgb(24, 21, 21);
+    color: rgb(163, 168, 166);
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+   
+}
+
+.big p,h1,h2,button{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 50px;
+        
+    
+    }
+
+.big h1:hover{
+
+    color: rgb(232, 126, 107);
+    
+
+}
+
+.big button{
+
+   
+
+    width: 60px;
+    border-radius: 25px;
+   margin-top: 20px;
+    
+background-color:  rgb(218, 167, 131);
+    
+border: 1px solid white;
+
+color: thistle;
+}
+
+.big button:hover{
+
+    background-color:   rgb(242, 104, 79);
+    border:2px solid rgb(255, 145, 126);
+
+}
+
+@media screen and (min-width:270px)
+{
+    .big button{
+
+        margin-left: 3rem;
+    }
+
+    .background button{
+        height: 10px;
+        width: 30px;
+        margin-left: 4rem;
+    }
+
+    .background h1{
+        font-size: 22px;
+        
+        }
+
+
+}
+
+@media screen and (min-width:320px)
+{
+    .background button{
+
+        height: 10px;
+        width: 30px;
+    }
+    
+
+    .background h1{
+        font-size: 26px;
+        
+        }
+
+
+}
+
+@media screen and (min-width:340px)
+{
+    .background button{
+
+       margin-left: 78px;
+    }
+    
+    .background h1{
+        font-size: 30px;
+        
+        }
+
+
+}
+@media screen and (min-width:400px)
+{  
+    
+    .background button{
+
+        width: 60px;
+        height: 15px;
+
+        margin-left: 60px;
+    }
+
+    
+    .background h1{
+        font-size: 40px;
+        
+        }
+
+
+}
+
+@media screen and (min-width:700px)
+{
+    .big button{
+
+        margin-left: 10.3rem;
+    }
+    .background button{
+      
+        width: 60px;
+        height: 15px;
+
+
+        margin-left: 6rem;
+    }
+
+    .background h1{
+        font-size: 74px;
+        
+        }
+
+
+}
+@media screen and (min-width:800px)
+{
+    .big button{
+
+        margin-left: 12rem;
+    }
+    .background button{
+
+        margin-left: 8rem;
+    }
+
+
+}
+
+@media screen and (min-width:1000px)
+{
+    .big button{
+
+        margin-left: 18rem;
+    }
+    .background button{
+
+        margin-left: 15rem;
+    }
+
+
+}
+@media screen and (min-width:1200px)
+{
+    .big button{
+
+        margin-left: 29rem;
+    }
+    .background button{
+
+        margin-left: 23rem;
+    }
+
+    .background h1{
+        font-size: 80px;
+       
+        }
+
+}
+
+.small-2{
+
+    background-color: rgb(144, 133, 155);
+       
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+    
+}
+
+.small-2 img{
+
+    width: 0.5fr;
+}
+
+
+
+
+.number-1 span{
+width: 50%;
+
+    display: grid;
+  
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:100px;
+
+  grid-template-columns: .2fr 1.2fr .2fr ;
+  grid-template-rows: 1fr;
+ 
+  
+}
+
+.number-1 span button{
+
+   width: 100%;
+    border-radius: 25px;
+  
+    
+background-color: rgb(144, 133, 155);
+    
+border: 1px solid white;
+
+color: thistle;
+
+
+grid-column: 1/2/3 ;
+
+
+grid-row: 1;
+
+
+  }
+
+  .number-1 button:hover{
+
+    background-color: rgb(175, 175, 214) ;
+    
+
+  }
+ 
+  @media screen and (min-width:270px){
+
+     .number-1 span button{
+         margin: 0%;
+        grid-column:1;
+        width:70%;
+        margin-right:100px;
+    }
+
+    }
+
+    @media screen and (min-width:300px){
+
+        .number-1 span button{
+            
+            grid-column: 1/2/3 ;
+           width:70%;
+
+           margin-left: 25px ;
+
+        }
+         
+   
+       }
+
+    @media screen and (min-width:412px){
+
+        .number-1 span button{
+            
+            grid-column: 1/2/3 ;
+           width:70%;
+           margin-left: 50px ;
+         
+   
+       }
+
+  }
+
+  @media screen and (min-width:700px){
+    .number-1 span button{
+
+      grid-column:2/4;
+      width:50%;
+      margin-left: 150px;
+    }
+
+  }
+
+
+  @media screen and (min-width:1000px){
+    .number-1 span button{
+
+      grid-column: 3/4;
+      width:50%;
+      margin-right: 180px;
+    }
+
+  }
+  @media screen and (min-width:1200px){
+  .number-1 span button {
+    
+         grid-column: 3/4;
+          height: 1.7rem;
+          width:70%;
+          margin-right: 210px;
+          
+      }
+  }
+
+ .number-3 .icons{
+     display: grid;
+     grid-template-columns: repeat(8,1fr);
+     grid-template-rows: repeat(2,1fr);
+     /* border: 2px solid red; */
+ }
+
+
+
+.number-3 h1,h2,h3,p{
+
+display: grid;
+place-items: center;
+color: cornsilk;
+
+}
+
+.heading {
+color: cornsilk;
+margin-bottom: 20px;
+
+}
+
+
+.number-1 h1{
+
+    font-size: 30px;
+}
+.number-1 h3{
+   
+
+    font-size: 15px;
+}
+.number-1 p{
+
+    font-size: 13px;
+}
+
+img,picture{
+    display: block;
+   width:70%;
+
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-inline: 50px;
+
+}
+
+.main-content{
+
+    padding:10%;
+    flex:1 1 80%;
+    min-height: 100vh;
+}
+
+.portfolio{
+    display: grid;
+    height: 100%;
+    grid-template-rows:repeat(6,1fr);
+    grid-template-columns:repeat(5,1fr) ;
+    grid-gap: 20px;
+}
+
+.portfolio-item{
+   
+    background-color: chocolate;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.portfolio-item.medium{
+
+    grid-row: span 2;
+    grid-column: span 2;
+
+
+   }
+
+.portfolio-item.large{
+
+    grid-row: span 3;
+    grid-column: span 3;
+
+
+   }
+
+.portfolio-item.tall{
+
+    grid-row: span 3;
+    grid-column: span 2;
+
+
+   }
+.portfolio-item.wide{
+
+    grid-row: span 2;
+    grid-column: span 3;
+
+
+   }
+
+
+.one{
+
+    background-image: url("./pictures/photo-1641843311163-1eb2eeba3c2d.jpeg");
+    background-size: cover;
+    background-position: top left;
+    color: lightgray;
+    background-color: rgb(122, 122, 122);
+    background-blend-mode: multiply;
+}
+
+.two{
+
+    background-image: url("./pictures/photo-1557008075-7f2c5efa4cfd.jpeg");
+    background-color: rgb(122, 122, 122);
+    background-blend-mode: multiply;
+    color: lightgray;
+    background-size: cover;
+    background-position:bottom ;
+}
+
+.three{
+
+    background-image: url("./pictures/pexels-matheus-guimarães-611328.jpg");
+    background-size: cover;
+    background-position: top left;
+    color: lightgray;
+    background-position:bottom  ;
+    background-color: rgb(122, 122, 122);
+    background-blend-mode: multiply;
+}
+
+.four{
+
+    background-image: url("./pictures/pexels-andrew-harvard-4846137.jpg");
+    background-size: cover;
+    background-position: top left;
+    color: lightgray;
+    background-color: rgb(122, 122, 122);
+    background-blend-mode: multiply;
+  
+}
+
+.five{
+
+    background-image: url("./pictures/photo-1642445326734-95bcefe75fdd.jpeg");
+    background-size: cover;
+    background-position: top left;
+    color: lightgray;
+    background-position:bottom top ;
+    background-color: rgb(122, 122, 122);
+    background-blend-mode: multiply;
+  
+}
+.six{
+
+    background-image: url("./pictures/photo-1642200848836-f18756e7aa0a.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: lightgray;
+    background-color: rgb(122, 122, 122);
+    background-blend-mode: multiply;
+}
+
+
