@@ -56,7 +56,7 @@ margin-top: 45px;
 
 
     margin-top: 20px;
-    margin-left: 2.8rem;
+    margin-left: 5rem;
     width: 35%;
 
     border: none;
@@ -75,7 +75,7 @@ margin-top: 45px;
 
 
 .next{
-    margin-inline: 45px;
+    margin-inline: 30px;
     margin-top: 8px;
 margin-bottom: 5px;
 margin-left: 3.5rem;
@@ -86,22 +86,79 @@ font-size: 12px;
 
 
 
+@media screen and (min-width:200px){
+
+    .inner_container button{
 
 
-@media screen and (min-width:800px){
-
-    .inner_container{
-
-      
-        width: 20%;
+       margin: 0%;
+       margin-top: 20px;
+        margin-left: 2rem;
         
-        
-        }
+      }
+
+    
+
+.next{
+
+margin-inline: 10px;
+margin-left: 1.7rem;
+font-size: 4.5px;
+}
 
 }
 
-@media screen and (min-width:760px){
+@media screen and (min-width:270px){
 
+    .inner_container button{
+
+
+       margin: 0%;
+       margin-top: 20px;
+        margin-left: 2rem;
+        font-size: 8px;
+        
+      }
+
+    
+
+.next{
+
+margin-inline: 10px;
+margin-left: 1.7rem;
+font-size: 3.5px;
+}
+
+}
+
+
+
+
+@media screen and (min-width:350px){
+
+    .inner_container button{
+
+
+       margin: 0%;
+       margin-top: 20px;
+        margin-left: 3rem;
+        
+      }
+
+    
+
+.next{
+
+margin-inline: 15px;
+margin-left: 2rem;
+font-size: 6px;
+}
+
+}
+
+
+@media screen and (min-width:760px){
+        
     .inner_container button{
 
 
@@ -120,14 +177,15 @@ margin-left: 12rem;
 }
 
 }
-
 @media screen and (min-width:780px){
-
+        
     .inner_container button{
 
 
        
-        margin-left: 2.8rem;
+        margin-left: 5rem;
+
+        font-size: 12px;
         
       }
 
@@ -137,8 +195,19 @@ margin-left: 12rem;
    
     margin-left: 3.5rem;
 
-
+font-size: 12px;
 }
 
 }
 
+@media screen and (min-width:800px){
+
+    .inner_container{
+
+      
+        width: 20%;
+        
+        
+        }
+
+}

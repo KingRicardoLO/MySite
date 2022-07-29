@@ -260,6 +260,14 @@ position: relative;
 
 }
 
+
+h1{
+
+
+color: rgb(77, 73, 73);
+
+}
+
 .background{
     
    background-image: url("./pictures/pexels-andrew-harvard-4846137.jpg");
@@ -288,7 +296,8 @@ position: relative;
 
 .background h1{
 
-color: rgb(218, 167, 131);
+color: rgb(255, 166, 103);
+
 }
 
 .background button{
@@ -317,8 +326,8 @@ color: rgb(218, 167, 131);
 
 
 .small{
-
-    background-color: rgb(134, 131, 128);
+    background-color: rgb(144, 133, 155);
+    
     
 display: flex;
 justify-content: center;
@@ -352,11 +361,11 @@ align-items: center;
 
 .big p,h1,h2,button{
 
-    
+    color:rgb(185, 185, 186);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-inline: 50px;
+    margin-inline: 35px;
         
     
     }
@@ -407,7 +416,22 @@ color: thistle;
         font-size: 22px;
         
         }
+    
 
+    .big{
+
+        background-color: rgb(95, 86, 86);
+
+    }
+
+
+   
+
+    .content-01{
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
 }
 
@@ -686,7 +710,7 @@ margin-bottom: 20px;
 
 .number-1 h1{
 
-    font-size: 30px;
+    font-size: 18px;
 }
 .number-1 h3{
    
@@ -763,15 +787,16 @@ img,picture{
 
    }
 
-
 .one{
 
     background-image: url("./pictures/photo-1641843311163-1eb2eeba3c2d.jpeg");
     background-size: cover;
     background-position: top left;
-    color: lightgray;
+ 
     background-color: rgb(122, 122, 122);
     background-blend-mode: multiply;
+    color: rgb(5, 4, 5);
+    box-shadow: 20px 20px 20px ;
 }
 
 .two{
@@ -779,9 +804,10 @@ img,picture{
     background-image: url("./pictures/photo-1557008075-7f2c5efa4cfd.jpeg");
     background-color: rgb(122, 122, 122);
     background-blend-mode: multiply;
-    color: lightgray;
+    color: rgb(0, 0, 0);
     background-size: cover;
     background-position:bottom ;
+    box-shadow: 20px 20px 20px ;
 }
 
 .three{
@@ -789,10 +815,12 @@ img,picture{
     background-image: url("./pictures/pexels-matheus-guimarães-611328.jpg");
     background-size: cover;
     background-position: top left;
-    color: lightgray;
+    color: rgb(0, 0, 0);
     background-position:bottom  ;
     background-color: rgb(122, 122, 122);
     background-blend-mode: multiply;
+
+    box-shadow: 20px 20px 20px ;
 }
 
 .four{
@@ -800,10 +828,11 @@ img,picture{
     background-image: url("./pictures/pexels-andrew-harvard-4846137.jpg");
     background-size: cover;
     background-position: top left;
-    color: lightgray;
+    color: rgb(0, 0, 0);
     background-color: rgb(122, 122, 122);
     background-blend-mode: multiply;
   
+    box-shadow: 20px 20px 20px ;
 }
 
 .five{
@@ -811,20 +840,23 @@ img,picture{
     background-image: url("./pictures/photo-1642445326734-95bcefe75fdd.jpeg");
     background-size: cover;
     background-position: top left;
-    color: lightgray;
+    color: rgb(0, 0, 0);
     background-position:bottom top ;
     background-color: rgb(122, 122, 122);
     background-blend-mode: multiply;
-  
+ 
+    box-shadow: 20px 20px 20px ;
 }
 .six{
 
     background-image: url("./pictures/photo-1642200848836-f18756e7aa0a.jpeg");
     background-size: cover;
     background-position: center;
-    color: lightgray;
+    color: rgb(0, 0, 0);
     background-color: rgb(122, 122, 122);
     background-blend-mode: multiply;
+
+    box-shadow: 20px 20px 20px ;
 }
 
 
